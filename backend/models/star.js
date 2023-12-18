@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
   Star.init({
     product: DataTypes.INTEGER,
     name: DataTypes.STRING,
-    description: DataTypes.STRING,
+    email: DataTypes.STRING,
     rating: DataTypes.INTEGER
   }, {
     sequelize,

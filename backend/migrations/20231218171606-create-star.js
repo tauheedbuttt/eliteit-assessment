@@ -21,7 +21,7 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      description: {
+      email: {
         type: Sequelize.STRING
       },
       rating: {
