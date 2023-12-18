@@ -2,7 +2,6 @@ const { Product } = require("../models/index");
 
 module.exports = {
     getProduct: async (req, res) => {
-        const { id, text, deleted } = req.query;
         const products = await Product.findAll({});
         return res.success("Product fetched successfully", products)
     },
