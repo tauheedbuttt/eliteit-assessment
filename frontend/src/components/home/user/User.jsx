@@ -29,11 +29,8 @@ const User = ({ data, setData }) => {
             type: "Email"
         },
     ]
+    const onSubmit = (data) => onAdd(data)
 
-    const onSubmit = (data) => {
-        // console.log(data)
-        onAdd(data);
-    }
     return (
         <Modal onClose={() => setData(null)} open={data != null} className='max-h-full w-[200px]'>
             <Rating

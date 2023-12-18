@@ -5,7 +5,6 @@ const Modal = ({
   open,
   onClose,
   children,
-  title,
   className = "",
 }) => {
   return (
@@ -41,7 +40,6 @@ const Modal = ({
                     className
                   }
                 >
-                  {title && <Dialog.Title>{title}</Dialog.Title>}
                   {children}
                 </div>
               </Dialog.Panel>

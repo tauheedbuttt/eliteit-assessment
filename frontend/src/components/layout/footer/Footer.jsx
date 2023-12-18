@@ -33,7 +33,7 @@ const Footer = () => {
     ]
 
     return (
-        <div>
+        <footer>
             <div className='bg-secondary flex md:flex-row flex-col justify-between px-10 py-10 gap-20'>
                 {/* Newsletter */}
                 <div className='flex flex-1 flex-col gap-10 justify-between text-white'>
@@ -82,7 +82,7 @@ const Footer = () => {
             <div className='flex items-center justify-center bg-secondary-medium p-2'>
                 <Link className='text-white opacity-70'>© 2023 Imperial Locum. All rights reserved.  </Link>
             </div>
-        </div>
+        </footer>
     )
 }
 

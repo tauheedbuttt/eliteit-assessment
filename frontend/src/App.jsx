@@ -7,12 +7,12 @@ import NoPage from "./pages/NoPage/NoPage";
 const App = () => {
   return (
     <Routes>
+      <Route path="*" element={<NoPage />} />
       <Route path="/*" element={<Layout />}>
         {publicRoutes?.map((item, index) => (
           <Route key={index} path={item.path} element={<item.page />} />
         ))}
       </Route>
-      <Route path="*" element={<NoPage />} />
     </Routes>
   );
 }
