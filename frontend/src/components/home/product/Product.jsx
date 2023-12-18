@@ -14,15 +14,15 @@ const Product = ({ item, border, isLoading }) => {
             {
                 isLoading
                     ? <>
-                        <div className="px-28 py-2 bg-line rounded-lg animate-pulse " />
-                        <div className="w-[75%] py-[3px] bg-line rounded-lg animate-pulse -mb-3" />
-                        <div className="w-[50%] py-[3px] bg-line rounded-lg animate-pulse -mb-3" />
-                        <div className="w-[85%] py-[3px] bg-line rounded-lg animate-pulse -mb-3" />
-                        <div className="w-[95%] py-[3px] bg-line rounded-lg animate-pulse -mb-3" />
-                        <div className="w-[75%] py-[3px] bg-line rounded-lg animate-pulse -mb-3" />
-                        <div className="w-[95%] py-[3px] bg-line rounded-lg animate-pulse -mb-3" />
-                        <div className="w-[55%] py-[3px] bg-line rounded-lg animate-pulse -mb-3" />
-                        <div className="w-[95%] py-[3px] bg-line rounded-lg animate-pulse -mb-3" />
+                        <div className="px-20 lg:px-28 xl:px-44 py-2 bg-line rounded-lg animate-pulse " />
+                        <div className=" py-[3px] bg-line rounded-lg animate-pulse -mb-3" />
+                        <div className=" py-[3px] bg-line rounded-lg animate-pulse -mb-3" />
+                        <div className=" py-[3px] bg-line rounded-lg animate-pulse -mb-3" />
+                        <div className=" py-[3px] bg-line rounded-lg animate-pulse -mb-3" />
+                        <div className=" py-[3px] bg-line rounded-lg animate-pulse -mb-3" />
+                        <div className=" py-[3px] bg-line rounded-lg animate-pulse -mb-3" />
+                        <div className=" py-[3px] bg-line rounded-lg animate-pulse -mb-3" />
+                        <div className=" py-[3px] bg-line rounded-lg animate-pulse -mb-3" />
                         <div className='flex items-center justify-between w-full my-4'>
                             <div className="w-[15%] py-[3px] bg-line rounded-lg animate-pulse -mb-3" />
                             <div>

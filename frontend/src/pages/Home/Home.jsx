@@ -10,7 +10,7 @@ import Product from '../../components/home/product/Product';
 
 
 const Home = () => {
-    const { data: products, isLoading, isFetching } = useQuery(
+    const { data: products, isLoading } = useQuery(
         ['products', {}],
         getProducts,
         {
@@ -37,7 +37,7 @@ const Home = () => {
 
             {/* Products */}
             <div className='p-20 flex flex-col gap-5 relative'>
-                <img src={waves} className='absolute opacity-5 object-cover' />
+                <img src={waves} className='absolute opacity-5 object-cover w-[90%]' />
                 <div className='flex flex-col gap-5'>
                     <div className="text-center text-secondary text-[28px] font-semibold font-['Montserrat'] uppercase leading-[33.60px] tracking-tight">VIEW OUR PRODUCTS</div>
                     <div className="text-center text-secondary ">Lorem Ipsum has been the industry's standard the dummy text ever Lorem Ipsum has been the industry's standard. dummy text ever </div>

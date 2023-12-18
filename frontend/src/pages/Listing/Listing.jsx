@@ -11,7 +11,7 @@ import Rating from '../../components/rating/Rating';
 
 const Listing = () => {
     const { query } = useQueryParams();
-    const { data: stars, isLoading, isFetching } = useQuery(
+    const { data: stars, isLoading } = useQuery(
         ['stars', query],
         getStars,
         {
