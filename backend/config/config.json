@@ -1,0 +1,30 @@
+{
+  "development": {
+    "use_env_variable": "DB_CONNECTION_STRING",
+    "dialect": "mysql",
+    "pool": {
+      "max": 500,
+      "min": 0,
+      "acquire": 60000,
+      "idle": 5000
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "use_env_variable": "DB_CONNECTION_STRING",
+    "dialect": "mysql",
+    "logging": false,
+    "pool": {
+      "max": 1000,
+      "min": 0,
+      "acquire": 60000,
+      "idle": 5000
+    }
+  }
+}
