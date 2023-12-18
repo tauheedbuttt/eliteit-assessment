@@ -21,8 +21,8 @@ function Button({
       text: "accent",
     },
     accent: {
-      bg: "bg-accent",
-      hover: "hover:opacity-90",
+      bg: "bg-accent border-[1px] border-primary",
+      hover: "hover:bg-primary hover:text-white",
       text: "primary",
     },
   };
@@ -33,7 +33,7 @@ function Button({
       type={type}
       onClick={onClick}
       disabled={disabled || isLoading}
-      className={`${className} rounded-md  ${color.bg} gap-4 px-5 flex justify-center items-center py-2 text-sm  w-full  text-${color.text} shadow-sm ${color.hover} focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${color.outline}`}
+      className={`${className} ${color.bg} gap-4 px-5 flex justify-center items-center py-2 text-sm  w-full  text-${color.text} shadow-sm ${color.hover} focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${color.outline}`}
     >
       <Loader isLoading={isLoading}>{children}</Loader>
     </button>

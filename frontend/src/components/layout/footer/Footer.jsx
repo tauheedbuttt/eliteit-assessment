@@ -47,7 +47,7 @@ const Footer = () => {
                     </div>
                     <div className='flex gap-3 items-center '>
                         <Icon icon={phone} to={""} />
-                        <span>+1 (559) 380 9094</span>
+                        <Link>+1 (559) 380 9094</Link>
                     </div>
                 </div>
 
@@ -55,9 +55,9 @@ const Footer = () => {
                 <div className='flex flex-1 flex-col gap-10 justify-between text-white'>
                     <h4 className='uppercase tracking-wide '>Locum Tenens</h4>
                     <div className='flex flex-col flex-1 opacity-70 gap-2 h-full'>
-                        <span>What is Locum Tenens?</span>
-                        <span>Why Work Locum Tenens?</span>
-                        <span>Work With Imperial Locum!</span>
+                        <Link>What is Locum Tenens?</Link>
+                        <Link>Why Work Locum Tenens?</Link>
+                        <Link>Work With Imperial Locum!</Link>
                     </div>
                     <div className='flex flex-col opacity-70 gap-3 underline'>
                         <Link to={"/"}>Privacy</Link>
@@ -69,8 +69,8 @@ const Footer = () => {
                 <div className='flex flex-1 flex-col gap-10 justify-between text-white'>
                     <h4 className='uppercase tracking-wide '>About Imperial Locum</h4>
                     <div className='flex flex-col flex-1 opacity-70 gap-2 h-full'>
-                        <span>Our Story</span>
-                        <span>Our People</span>
+                        <Link>Our Story</Link>
+                        <Link>Our People</Link>
                     </div>
                     <div className='flex opacity-70 gap-5 underline'>
                         {
@@ -80,7 +80,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='flex items-center justify-center bg-secondary-medium p-2'>
-                <span className='text-white opacity-70'>© 2023 Imperial Locum. All rights reserved.  </span>
+                <Link className='text-white opacity-70'>© 2023 Imperial Locum. All rights reserved.  </Link>
             </div>
         </div>
     )
