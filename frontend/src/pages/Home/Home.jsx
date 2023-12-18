@@ -10,7 +10,13 @@ import Product from '../../components/home/product/Product';
 
 
 const Home = () => {
-    const { data: products, isLoading, isFetching } = useQuery(['products', {}], getProducts);
+    const { data: products, isLoading, isFetching } = useQuery(
+        ['products', {}],
+        getProducts,
+        {
+            refetchOnWindowFocus: false,
+        }
+    );
 
     const data = isLoading ? [1, 2, 3] : products;
 
@@ -36,7 +42,7 @@ const Home = () => {
                     <div className="text-center text-secondary text-[28px] font-semibold font-['Montserrat'] uppercase leading-[33.60px] tracking-tight">VIEW OUR PRODUCTS</div>
                     <div className="text-center text-secondary ">Lorem Ipsum has been the industry's standard the dummy text ever Lorem Ipsum has been the industry's standard. dummy text ever </div>
                 </div>
-                <div className='flex flex-col md:flex-row gap-10'>
+                <div className='flex flex-col md:flex-row md:justify-between md:  gap-10'>
                     {
                         data?.map((item, index) => (
                             <Product

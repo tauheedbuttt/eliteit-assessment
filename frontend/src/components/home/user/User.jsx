@@ -9,7 +9,7 @@ import { addStar } from '../../../services/star';
 import { alert } from "../../../helpers/alert";
 import { starAddValidation } from '../../../validations/star';
 
-export const User = ({ data, setData }) => {
+const User = ({ data, setData }) => {
     const { mutate: onAdd, isLoading } = useMutation(addStar, {
         onSuccess: () => {
             alert("Product starred successfully", "success");
@@ -51,3 +51,5 @@ export const User = ({ data, setData }) => {
         </Modal>
     )
 }
+
+export default User;
