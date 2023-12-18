@@ -7,6 +7,7 @@ require("express-async-errors");
 
 const { fallBack, errorHandler } = require("./middlewares/error.middleware");
 const { responseHandler } = require("./middlewares/response.middleware.js");
+const { generatePrices } = require("./helpers/price.helper.js");
 const router = require("./routes/index.js");
 
 // Database Connection
@@ -15,6 +16,7 @@ db.sequelize
     .authenticate()
     .then(function () {
         console.log("Database connected");
+        generatePrices()
     })
     .catch(function (err) {
         console.log("[ERROR] Something went wrong with database connection!\n", err);
