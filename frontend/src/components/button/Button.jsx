@@ -13,7 +13,7 @@ function Button({
     primary: {
       bg: "bg-primary",
       hover: "hover:opacity-90",
-      text: "accent",
+      text: "white",
     },
     secondary: {
       bg: "bg-primary-light",
@@ -35,7 +35,7 @@ function Button({
       disabled={disabled || isLoading}
       className={`${className} ${color.bg} gap-4 px-5 flex justify-center items-center py-2 text-sm  w-full  text-${color.text} shadow-sm ${color.hover} focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${color.outline}`}
     >
-      <Loader isLoading={isLoading}>{children}</Loader>
+      <Loader size={20} isLoading={isLoading} color={color.text}>{children}</Loader>
     </button>
   );
 }

@@ -18,6 +18,7 @@ export default {
         },
         accent: "#FAF4F3",
         line: "#D5D5D580",
+        star: "#FFA800"
       },
       fontFamily: {
         rubik: ["Rubik", "sans-serif"],
