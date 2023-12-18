@@ -1,9 +1,13 @@
 const { Star, Product } = require("../models/index");
+const { pageValues, pageResponse } = require("../helpers/pagination.helper.js");
 
 module.exports = {
     getStar: async (req, res) => {
-        const { id, text, deleted } = req.query;
-        const stars = await Star.findAll({
+        const { limit, page, skip } = pageValues(req.query);
+
+        const stars = await Star.findAndCountAll({
+            limit: limit,
+            offset: skip,
             include: [
                 {
                     model: Product,
@@ -11,7 +15,11 @@ module.exports = {
                 },
             ],
         });
-        return res.success("Star fetched successfully", stars)
+
+        return res.success(
+            "Star fetched successfully",
+            pageResponse(stars, page, limit)
+        )
     },
 
     addStar: async (req, res) => {
