@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "fbcbb4e8-8319-42bb-82d7-0814065744d3",
+		"name": "Elite IT Assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21834775"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/product",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Hospital Management System\",\r\n    \"description\":\"Lorem Ipsum has been the industry's standard the dummy text ever Lorem Ipsum has been the industry's standard. dummy text ever \",\r\n    \"price\":200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/product/add",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Product Management Tool\",\r\n    \"description\":\"Lorem Ipsum has been the industry's standard the dummy text ever Lorem Ipsum has been the industry's standard. dummy text ever \",\r\n    \"price\":200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/product/update/:id",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"product",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/product/delete/:id",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"product",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stars",
+			"item": [
+				{
+					"name": "Get Stars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/star",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"star"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Star",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":2,\r\n    \"name\":\"Test User\",\r\n    \"email\":\"test@user.com\",\r\n    \"rating\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/star/add",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"star",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Star",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":3,\r\n    \"name\":\"Test User\",\r\n    \"email\":\"test@user.com\",\r\n    \"rating\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/star/update/:id",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"star",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Star",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/star/delete/:id",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"star",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
