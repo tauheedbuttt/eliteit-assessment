@@ -33,7 +33,7 @@ function Button({
       type={type}
       onClick={onClick}
       disabled={disabled || isLoading}
-      className={`${color.bg} gap-4 px-5 flex justify-center items-center py-2 text-sm  w-full  text-${color.text} shadow-sm ${color.hover}  ${color.outline} ${className} `}
+      className={`${color.bg} gap-4 px-5 flex justify-center items-center py-2 text-sm  w-full  text-${color.text} shadow-sm ${color.hover} ${className} `}
     >
       <Loader size={20} isLoading={isLoading} color={color.text}>
         {children}
