@@ -1,12 +1,7 @@
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 
-const Modal = ({
-  open,
-  onClose,
-  children,
-  className = "",
-}) => {
+const Modal = ({ open, onClose, children, className = "" }) => {
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-30" onClose={onClose}>
@@ -36,7 +31,7 @@ const Modal = ({
               <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white  text-left shadow-xl transition-all sm:my-8 sm:max-w-3xl ">
                 <div
                   className={
-                    "bg-accent overflow-auto max-h-96 flex gap-8 w-full sm:w-fit flex-col p-10 rounded-lg " +
+                    "bg-accent overflow-auto max-h-96 flex gap-8 w-96  flex-col p-10 rounded-lg " +
                     className
                   }
                 >
