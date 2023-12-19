@@ -19,7 +19,7 @@
 @layer components {
 
     .formError {
-        @apply text-red-500 text-[12px];
+        @apply text-primary text-[12px];
     }
 
     .formInput {
