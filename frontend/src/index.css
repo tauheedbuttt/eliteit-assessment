@@ -9,6 +9,13 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+@layer utilities {
+    .header {
+        clip-path: ellipse(100% 100% at top center);
+    }
+}
+
+
 @layer components {
 
     .formError {
