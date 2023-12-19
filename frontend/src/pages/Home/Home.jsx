@@ -46,7 +46,10 @@ const Home = () => {
 
       {/* Products */}
       <div className="p-20 flex flex-col gap-5 relative">
-        <img src={waves} className="absolute opacity-5 object-cover w-[90%]" />
+        <img
+          src={waves}
+          className="absolute object-cover opacity-5 w-[70%] sm:w-[80%] md:w-[90%]"
+        />
         <div className="flex flex-col gap-5">
           <div className="text-center text-secondary text-[28px] font-semibold font-['Montserrat'] uppercase leading-[33.60px] tracking-tight">
             VIEW OUR PRODUCTS
