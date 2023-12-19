@@ -2,6 +2,10 @@
 
 This repository contains a fullstack web application split into two main folders: `frontend` and `backend`. It is using `Node.JS`, `Express.JS` and `MySQL` at backend with `sequelize` as ORM. For frontend, `React`, `Vite` and `Tailwind` is used. The backend is using dynamic routing, found in index.js file in routes folder.
 
+## DISCLAIMER
+
+The rating stars are clickbale in tablet and mobile screens. However, that is not the case in screens bigger than those. I was unable to detect the issue. Kindly check my implementation for that module in smaller screens.
+
 ## Backend Setup
 
 ### Prerequisites
