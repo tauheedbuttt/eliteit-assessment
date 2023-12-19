@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const logger = require("morgan");
 const helmet = require("helmet");
+const rateLimit = require("express-rate-limit");
 require("dotenv").config();
 require("express-async-errors");
 
@@ -26,6 +27,13 @@ db.sequelize
 const app = express();
 
 // Start Using Middlewares 
+
+// Rate Limiter
+app.use(rateLimit({
+    windowMs: 15 * 60 * 1000,
+    max: 100,
+    message: "You have exceeded your rate limit of 100 requests per 15 minutes."
+}));
 
 // Parse requests of content-type: application/json 
 app.use(express.json({ extended: true, limit: "50mb" }));
