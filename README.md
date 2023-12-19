@@ -1,4 +1,4 @@
-# MERN Stack Application
+# Full Stack Application
 
 This repository contains a fullstack web application split into two main folders: `frontend` and `backend`. It is using `Node.JS`, `Express.JS` and `MySQL` at backend with `sequelize` as ORM. For frontend, `React`, `Vite` and `Tailwind` is used.
 
@@ -37,7 +37,9 @@ npm run dev
 
 ### Postman Collection
 
-A Postman collection file (`collection.json`) is available in the `backend` folder to access the APIs.
+A Postman folder is also available for ease of access of the APIs.
+
+The backend will be accessible at `http://localhost:5000/api` by default.
 
 ## Frontend Setup
 

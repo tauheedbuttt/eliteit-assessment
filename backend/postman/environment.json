@@ -1,0 +1,15 @@
+{
+	"id": "83839dd4-b85f-4e98-ba3d-18fce1eeaf9b",
+	"name": "Development",
+	"values": [
+		{
+			"key": "BaseURL",
+			"value": "localhost:5000/api",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2023-12-19T00:15:17.556Z",
+	"_postman_exported_using": "Postman/10.21.4"
+}
