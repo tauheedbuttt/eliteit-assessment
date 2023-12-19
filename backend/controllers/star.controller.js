@@ -8,6 +8,9 @@ module.exports = {
         const stars = await Star.findAndCountAll({
             limit: limit,
             offset: skip,
+            order: [
+                ['id', 'DESC'],
+            ],
             include: [
                 {
                     model: Product,
