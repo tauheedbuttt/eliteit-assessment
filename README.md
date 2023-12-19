@@ -1,6 +1,6 @@
 # Full Stack Application
 
-This repository contains a fullstack web application split into two main folders: `frontend` and `backend`. It is using `Node.JS`, `Express.JS` and `MySQL` at backend with `sequelize` as ORM. For frontend, `React`, `Vite` and `Tailwind` is used.
+This repository contains a fullstack web application split into two main folders: `frontend` and `backend`. It is using `Node.JS`, `Express.JS` and `MySQL` at backend with `sequelize` as ORM. For frontend, `React`, `Vite` and `Tailwind` is used. The backend is using dynamic routing, found in index.js file in routes folder.
 
 ## Backend Setup
 
@@ -66,3 +66,10 @@ npm run dev
 ```
 
 The frontend will be accessible at `http://localhost:5173` by default.
+
+### Routes
+
+| URL        | Description   |
+| ---------- | ------------- |
+| `/`        | Home Page.    |
+| `/listing` | Listing Page. |
