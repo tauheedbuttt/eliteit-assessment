@@ -54,21 +54,19 @@ const Listing = () => {
           LIST OF PRODUCTS
         </div>
         <Table data={stars} headers={headers} isFetching={isLoading}>
-          {stars?.items?.map((star) => {
-            return (
-              <tr>
-                <td className="px-4 py-3">{star?.name}</td>
-                <td className="px-4 py-3">{star?.email}</td>
-                <td className="px-4 py-3">{star?.Product?.name}</td>
-                <td className="px-4 py-3">
-                  <Rating rating={star?.rating} />
-                </td>
-                <td className="px-4 py-3">
-                  <Button className="rounded-lg px-1">View Details</Button>
-                </td>
-              </tr>
-            );
-          })}
+          {stars?.items?.map((star, index) => (
+            <tr key={index}>
+              <td className="px-4 py-3">{star?.name}</td>
+              <td className="px-4 py-3">{star?.email}</td>
+              <td className="px-4 py-3">{star?.Product?.name}</td>
+              <td className="px-4 py-3">
+                <Rating rating={star?.rating} />
+              </td>
+              <td className="px-4 py-3">
+                <Button className="rounded-lg px-1">View Details</Button>
+              </td>
+            </tr>
+          ))}
         </Table>
       </div>
     </div>
