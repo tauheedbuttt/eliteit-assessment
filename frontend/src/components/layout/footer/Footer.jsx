@@ -39,11 +39,11 @@ const Footer = () => {
           <h4 className="text-xl font-semibold uppercase tracking-wide">
             SUBSCRIBE OUR EMAIL
           </h4>
-          <div className="flex flex-col flex-1 opacity-70 gap-3 h-full">
+          <div className="flex flex-col flex-1 gap-3 h-full">
             <input
               type="email"
               placeholder="Email Address"
-              className="bg-secondary-medium px-5 py-2"
+              className="bg-secondary-medium px-5 py-2 opacity-70 "
             />
             <Button variant="secondary">
               Submit Now
