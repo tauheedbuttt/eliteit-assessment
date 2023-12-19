@@ -2,7 +2,7 @@ const { Product } = require("../models/index");
 
 module.exports = {
     getProduct: async (req, res) => {
-        const products = await Product.findAll({});
+        const products = await Product.findAll({ limit: 3 });
         return res.success("Product fetched successfully", products)
     },
 
