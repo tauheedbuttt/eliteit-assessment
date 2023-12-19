@@ -59,7 +59,7 @@ const Home = () => {
             Lorem Ipsum has been the industry's standard. dummy text ever{" "}
           </div>
         </div>
-        <div className="flex flex-col md:flex-row md:justify-between md:gap-10 z-10">
+        <div className="flex flex-col md:flex-row md:justify-between gap-10 z-10">
           {data?.map((item, index) => (
             <Product
               item={item}
